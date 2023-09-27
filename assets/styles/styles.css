@@ -1,0 +1,19 @@
+/* Change the background color to black */
+body {
+    background-color: #000;
+    color: #5A6432;
+}
+
+/* Change the button color to #5A6432 */
+.btn-primary {
+    background-color: #5A6432;
+    border-color: #5A6432;
+}
+
+/* Change the button text color to white */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #5A6432;
+    border-color: #5A6432;
+    color: #fff;
+}
