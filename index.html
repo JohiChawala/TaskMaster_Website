@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Task Management</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5A6432;">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fas fa-tasks"></i> TaskMaster</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#tasks"><i class="fas fa-tasks"></i> Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#notifications"><i class="fas fa-bell"></i> Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team"><i class="fas fa-users"></i> Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Task Creation Section -->
+    <section id="tasks" class="py-5">
+        <div class="container">
+            <h2>Create New Task</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="taskTitle">Task Title</label>
+                            <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title">
+                        </div>
+                        <div class="form-group">
+                            <label for="taskDescription">Task Description</label>
+                            <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="dueDate">Due Date</label>
+                            <input type="date" class="form-control" id="dueDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="assignTo">Assign to Team Member</label>
+                            <select class="form-control" id="assignTo">
+                                <option value="">Fahad</option>
+                                <option value="">Zoya</option>
+                                <option value="">Johi</option>
+                                <option value="">Astha</option>
+                                <option value="">Simran</option>
+                                <option value="">Adhitya</option>
+                                <option value="">Bulbul</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Task</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task List Section -->
+    <section id="task-list" class="py-5">
+        <div class="container">
+            <h2>Task List</h2>
+            <ul class="list-group">
+                <!-- Task items go here -->
+                <li class="list-group-item">
+                    <h3>Task Title</h3>
+                    <p>Task Description</p>
+                    <span>Due Date: 2023-09-30</span>
+                    <span>Assigned to: Bulbul</span>
+                    <button class="btn btn-primary float-right">Mark as Complete</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Notifications Section -->
+    <section id="notifications" class="py-5">
+        <div class="container">
+            <h2>Notifications</h2>
+            <ul class="list-group">
+                <!-- Notification items go here -->
+                <li class="list-group-item">
+                    <p>Task "Task Title" is due tomorrow.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2>Team Members</h2>
+            <div class="row">
+                <!-- Team member items go here -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="jc.jpg" class="card-img-top" alt="Johi Chawla">
+                        <div class="card-body">
+                            <h5 class="card-title"><b><u>Johi Chawla</u></b></h5>
+                            <p class="card-text">Role: Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
